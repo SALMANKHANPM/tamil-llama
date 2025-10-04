@@ -11,7 +11,7 @@ class SentencePieceTrainer:
         self.model_prefix = "tamil_sp"
         self.vocab_size = 20000
         self.character_coverage = 1.0
-        self.model_type = "unigram"
+        self.model_type = "bpe"
 
     def train_sentencepiece_model(self, input_file):
         output_model_path = os.path.join(self.output_dir, f"{self.model_prefix}.model")
